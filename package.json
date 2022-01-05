@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-chromecast",
+  "name": "@alingabrieldm/cordova-plugin-chromecast",
   "version": "1.0.0",
   "scripts": {
     "host-chrome-tests": "node tests/www/chrome/host-tests.js",
@@ -23,7 +23,11 @@
     "java-checkstyle": "0.0.1",
     "path": "^0.12.7"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alingabrieldm/cordova-plugin-chromecast"
+  },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry":"https://npm.pkg.github.com/alingabrieldm"
   }
 }
