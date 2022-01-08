@@ -29,6 +29,11 @@ NSMutableArray<MLPCastRequestDelegate*>* requestDelegates;
     // Ensure we are only listening once after init
     [self.sessionManager removeListener:self];
     [self.sessionManager addListener:self];
+
+    // Ensure initializaition of genericChannels
+    if (self.genericChannels == nil) {
+        self.genericChannels = [[NSMutableDictionary alloc] init];
+    }
     
     return self;
 }
